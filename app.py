@@ -36,8 +36,8 @@ if uploaded_file is not None:
     st.subheader("علاقة المساحة بسعر العقار")
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.scatterplot(x=df['GrLivArea'], y=df['SalePrice'], color='blue', ax=ax)
-    ax.set_title('علاقة المساحة بسعر العقار', fontsize=14)
-    ax.set_xlabel('المساحة (قدم مربع)', fontsize=12)
+    ax.set_title('Relationship between Area and Property Price', fontsize=14)
+    ax.set_xlabel('Area (Square Feet)', fontsize=12)
     ax.set_ylabel('السعر ($)', fontsize=12)
     st.pyplot(fig)
 
