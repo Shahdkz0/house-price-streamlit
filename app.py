@@ -38,7 +38,7 @@ if uploaded_file is not None:
     sns.scatterplot(x=df['GrLivArea'], y=df['SalePrice'], color='blue', ax=ax)
     ax.set_title('Relationship between Area and Property Price', fontsize=14)
     ax.set_xlabel('Area (Square Feet)', fontsize=12)
-    ax.set_ylabel('السعر ($)', fontsize=12)
+    ax.set_ylabel('Price ($)', fontsize=12)
     st.pyplot(fig)
 
     st.subheader("جرب التنبؤ بسعر عقار جديد:")
